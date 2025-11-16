@@ -3219,3 +3219,35 @@ input, select, textarea {
 			}
 
 	}
+	.skills-list{
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		column-gap: 2rem;
+		list-style-type: disc;
+		padding-left: 1.5rem;
+		margin-bottom: 2rem;
+	}
+	.about-link{
+		margin-right: 40px;
+		margin-top: 3em;
+	}
+	.about-link a{
+		display: block;
+		line-height: 0.5;
+		margin-bottom: 0.2em;
+		border-bottom: none;
+		text-decoration: none;
+		font-size: 1.1em;
+		color: #fff;
+		font-weight: bold;
+		transition: color 0.3s ease;
+	}
+	.about-link a:hover {
+		color: #aaa;
+	}
+	.category-link.active{
+		color: #2ebaae;
+	}
+	
+
