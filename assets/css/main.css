@@ -2570,7 +2570,17 @@ input, select, textarea {
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
+			margin-bottom: 2em;
 		}
+
+		.work-item img{
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			border-radius: 6px;
+			margin-bottom: 1.2em;
+		}
+
 
 /* Header */
 

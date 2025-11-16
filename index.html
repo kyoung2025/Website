@@ -97,7 +97,7 @@
 							
 						</div>
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<li><a href="#" id="show-all" class="button">Full Portfolio</a></li>
 						</ul>
 					</section>
 
@@ -508,7 +508,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     				});
   				});
 			});
+			//Show all items when click "Full Portfolio"
+			document.addEventListener("DOMContentLoaded", function () {
+				const showAllBtn = document.getElementById("show-all");
+				const workItems = document.querySelectorAll(".work-item");
+				const categoryLinks = document.querySelectorAll(".category-link");
 
+				showAllBtn.addEventListener("click", function (e) {
+					e.preventDefault();
+
+					//show all sections
+					workItems.forEach(item => {
+						item.style.display = "block";
+					});
+
+					//remove active states from category links
+					categoryLinks.forEach(link => link.classList.remove("active"));
+				});
+			});
 
 		
 			</script>
